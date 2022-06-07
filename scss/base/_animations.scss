@@ -1,0 +1,21 @@
+@keyframes btn-animation {
+    0% {
+        transform: scale(1);
+    }
+
+    20% {
+        transform: scale(0.99);
+    }
+
+    40% {
+        transform: scale(1);
+    }
+
+    60% {
+        transform: scale(0.99);
+    }
+
+    80% {
+        transform: scale(1);
+    }
+}

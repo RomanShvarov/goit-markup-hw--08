@@ -1,0 +1,24 @@
+/*  Соціальні Посилання Футер */
+.footer-socials__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+
+  border-radius: 50%;
+
+  background-color: #ffffff1a;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-function);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
+}
+
+.footer-socials__icon {
+  fill: #ffffff;
+}
