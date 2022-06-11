@@ -110,4 +110,9 @@
   &__icon {
     fill: var(--white-txt-color);
   }
+
+  @include mq(not-desktop) {
+    margin-right: auto;
+    margin-left: auto;
+  }
 }

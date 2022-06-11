@@ -7,10 +7,35 @@
 .footer-container {
   display: flex;
   align-items: baseline;
+  @include mq(mobile-only) {
+    display: block;
+  }
+
+  @include mq(tablet-only) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
 }
 
 .footer-logo-contact-box {
-  margin-right: 70px;
+  @include mq(mobile-only) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 60px;
+  }
+
+  @include mq(tablet-only) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 60px;
+  }
+
+  @include mq(desktop) {
+    margin-right: 70px;
+  }
 }
 
 .footer__logo {
@@ -27,6 +52,12 @@
   &--white {
     color: var(--white-txt-color);
   }
+
+  @include mq(not-desktop) {
+    font-size: 24px;
+    line-height: 1.17;
+    text-align: center;
+  }
 }
 
 .footer-contact__item {
@@ -35,6 +66,10 @@
 
   &:last-child {
     margin-bottom: 0;
+  }
+
+  @include mq(not-desktop) {
+    margin-bottom: 8px;
   }
 }
 
@@ -51,6 +86,14 @@
   &:focus {
     color: var(--accent-color);
   }
+
+  @include mq(not-desktop) {
+    display: block;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    text-align: center;
+  }
 }
 
 .footer-contact__mail {
@@ -64,6 +107,14 @@
   &:focus {
     color: var(--accent-color);
   }
+
+  @include mq(not-desktop) {
+    display: block;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    text-align: center;
+  }
 }
 
 .footer-contact__tel {
@@ -76,6 +127,20 @@
   &:hover,
   &:focus {
     color: var(--accent-color);
+  }
+
+  @include mq(not-desktop) {
+    display: block;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    text-align: center;
+  }
+}
+
+.footer-socials {
+  @include mq(mobile-only) {
+    margin-bottom: 60px;
   }
 }
 
@@ -94,6 +159,11 @@
   text-transform: uppercase;
   color: var(--white-txt-color);
   margin-bottom: 20px;
+
+  @include mq(not-desktop) {
+    display: block;
+    text-align: center;
+  }
 }
 
 .footer-socials__item {

@@ -1,43 +1,141 @@
 .benefits-section {
   padding-top: 94px;
   padding-bottom: 94px;
+
+  @include mq(not-desktop) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 .benefits-list {
-  display: flex;
-  align-items: center;
-}
-.benefits-item {
-  display: block;
-  width: 270px;
-  margin-right: 30px;
-
-  &:last-child {
-    margin-right: 0;
+  @include mq(mobile) {
+    display: block;
+    align-items: center;
   }
-
-  &__icon-place {
+  @include mq(tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  @include mq(desktop) {
     display: flex;
     align-items: center;
-    justify-content: center;
-    width: 270px;
-    height: 120px;
-    border-radius: 4px;
-    background-color: #f5f4fa;
+  }
+}
+
+.benefits-item {
+  @include mq(mobile-only) {
+    display: block;
+    width: 450px;
+    height: 226px;
     margin-bottom: 30px;
-  }
 
-  &__title {
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 1.14;
-    margin-bottom: 10px;
-    text-transform: uppercase;
-    color: var(--text-headlink-team-beneftype-col);
-  }
+    &:last-child {
+      margin-bottom: 0;
+    }
 
-  &__dscr {
-    line-height: 1.71;
-    color: var(--text-benef-tel-filter-col);
+    &__icon-place {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 450px;
+      height: 120px;
+      border-radius: 4px;
+      background-color: #f5f4fa;
+      margin-bottom: 30px;
+    }
+
+    &__title {
+      display: flex;
+      justify-content: center;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 1.14;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      color: var(--text-headlink-team-beneftype-col);
+    }
+
+    &__dscr {
+      font-weight: 400;
+      line-height: 1.71;
+      color: var(--text-benef-tel-filter-col);
+    }
+  }
+  @include mq(tablet-only) {
+    display: block;
+    width: 354px;
+    height: 251px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0;
+    }
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+
+    &__icon-place {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 354px;
+      height: 120px;
+      border-radius: 4px;
+      background-color: #f5f4fa;
+      margin-bottom: 30px;
+    }
+
+    &__title {
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 1.14;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      color: var(--text-headlink-team-beneftype-col);
+    }
+
+    &__dscr {
+      font-weight: 400;
+      line-height: 1.71;
+      color: var(--text-benef-tel-filter-col);
+    }
+  }
+  @include mq(desktop) {
+    display: block;
+    width: 270px;
+    margin-right: 30px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &__icon-place {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 270px;
+      height: 120px;
+      border-radius: 4px;
+      background-color: #f5f4fa;
+      margin-bottom: 30px;
+    }
+
+    &__title {
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 1.14;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      color: var(--text-headlink-team-beneftype-col);
+    }
+
+    &__dscr {
+      line-height: 1.71;
+      color: var(--text-benef-tel-filter-col);
+    }
   }
 }

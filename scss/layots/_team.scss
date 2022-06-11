@@ -2,6 +2,11 @@
   background-color: var(--ind-team-section-bcg-col);
   padding-top: 94px;
   padding-bottom: 94px;
+
+  @include mq(not-desktop) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 .team {
@@ -14,30 +19,86 @@
   display: block;
   align-items: center;
   margin-bottom: 50px;
+
+  @include mq(not-desktop) {
+    margin-bottom: 30px;
+  }
 }
 
 .team-list {
-  display: flex;
-  align-items: center;
+  @include mq(mobile) {
+    display: block;
+    align-items: center;
+  }
+  @include mq(tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  @include mq(desktop) {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .team-item {
-  margin-right: 30px;
-  width: 270px;
-  height: 428px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-  background-color: var(--main-bcg-color);
+  @include mq(mobile-only) {
+    width: 450px;
+    height: 622px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    background-color: var(--main-bcg-color);
 
-  &:last-child {
-    margin-right: 0;
+    margin-bottom: 30px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  @include mq(tablet-only) {
+    width: 354px;
+    height: 536px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    background-color: var(--main-bcg-color);
+
+    margin-right: 30px;
+    margin-bottom: 30px;
+
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0;
+    }
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+  }
+
+  @include mq(desktop) {
+    margin-right: 30px;
+    width: 270px;
+    height: 428px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    background-color: var(--main-bcg-color);
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }
 
 .team-item-card {
   padding-top: 30px;
   padding-bottom: 30px;
+
+  @include mq(not-desktop) {
+    padding-bottom: 24px;
+  }
 
   &__member {
     margin-bottom: 10px;
@@ -55,6 +116,10 @@
     text-align: center;
     color: var(--text-benef-tel-filter-col);
     margin-bottom: 16px;
+
+    @include mq(not-desktop) {
+      font-weight: 400;
+    }
   }
 }
 

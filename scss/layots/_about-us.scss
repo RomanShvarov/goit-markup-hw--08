@@ -1,5 +1,9 @@
 .about-section {
   padding-bottom: 94px;
+
+  @include mq(not-desktop) {
+    display: none;
+  }
 }
 
 .about {
