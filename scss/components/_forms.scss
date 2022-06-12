@@ -218,6 +218,11 @@
   line-height: 1.71;
   letter-spacing: 0.03em;
 
+  @include mq(not-desktop) {
+    font-size: 12px;
+    line-height: 1.17;
+  }
+
   color: #757575;
 
   transition: color 250ms var(--timing-function);
@@ -228,6 +233,12 @@
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+
+  @include mq(not-desktop) {
+    font-size: 12px;
+    line-height: 1.17;
+  }
+
   text-decoration-line: underline;
 
   color: var(--accent-color);
