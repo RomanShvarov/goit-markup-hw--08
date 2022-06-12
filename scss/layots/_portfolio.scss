@@ -112,6 +112,18 @@
   }
 }
 
+.photo {
+  @include mq(tablet-only) {
+    width: 354px;
+    height: 294px;
+  }
+
+  @include mq(desktop) {
+    width: 370px;
+    height: 294px;
+  }
+}
+
 .portfolio-item__link {
   display: block;
   text-decoration: none;

@@ -57,6 +57,12 @@ p {
   margin: 0;
 }
 
+img {
+  display: block;
+  min-width: 100%;
+  height: auto;
+}
+
 .container {
   padding-left: 15px;
   padding-right: 15px;
@@ -1765,6 +1771,20 @@ p {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .member-photo {
+    width: 354px;
+    height: 374px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .member-photo {
+    width: 270px;
+    height: 260px;
+  }
+}
+
 .team-item-card {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -2154,6 +2174,20 @@ p {
   }
   .portfolio-item:nth-last-child(-n + 2) {
     margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .photo {
+    width: 354px;
+    height: 294px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .photo {
+    width: 370px;
+    height: 294px;
   }
 }
 

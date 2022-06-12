@@ -221,33 +221,126 @@
           <h2 class="about">Чем мы занимаемся</h2>
           <ul class="list about-list">
             <li class="about-item">
-              <img
-                class="about-photo"
-                src="./images/Services/service-img-1.jpg"
-                alt="Service1"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <!-- Набір зображень для десктопних екранів -->
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/Services/service-img-1-lg.jpg    1x,
+                    ./images/Services/service-img-1-lg@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- Набір зображень для планшетних екранів -->
+                <!-- <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/gallery/gallery-3_md.jpg    1x,
+                    ./images/gallery/gallery-3_md@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                /> -->
+                <!-- Набір зображень для мобільних екранів -->
+                <!-- <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/gallery/gallery-3_sm.jpg    1x,
+                    ./images/gallery/gallery-3_sm@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                /> -->
+                <!-- Дефолтне зображення, яке відпрацює у будь-якому випадку -->
+                <img
+                  class="about-photo"
+                  src="./images/Services/service-img-1-lg.jpg"
+                  alt="Service1"
+                  width="370"
+                  height="294"
+                  loading="lazy"
+                />
+              </picture>
               <p class="about-item__txt">Десктопные приложения</p>
             </li>
             <li class="about-item">
-              <img
-                class="about-photo"
-                src="./images/Services/service-img-2.jpg"
-                alt="Service2"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <!-- Набір зображень для десктопних екранів -->
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/Services/service-img-2-lg.jpg    1x,
+                    ./images/Services/service-img-2-lg@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- Набір зображень для планшетних екранів -->
+                <!-- <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/gallery/gallery-3_md.jpg    1x,
+                    ./images/gallery/gallery-3_md@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                /> -->
+                <!-- Набір зображень для мобільних екранів -->
+                <!-- <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/gallery/gallery-3_sm.jpg    1x,
+                    ./images/gallery/gallery-3_sm@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                /> -->
+                <!-- Дефолтне зображення, яке відпрацює у будь-якому випадку -->
+                <img
+                  class="about-photo"
+                  src="./images/Services/service-img-2-lg.jpg"
+                  alt="Service2"
+                  width="370"
+                  height="294"
+                  loading="lazy"
+                />
+              </picture>
               <p class="about-item__txt">Мобильные приложения</p>
             </li>
             <li class="about-item">
-              <img
-                class="about-photo"
-                src="./images/Services/service-img-3.jpg"
-                alt="Service3"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <!-- Набір зображень для десктопних екранів -->
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/Services/service-img-3-lg.jpg    1x,
+                    ./images/Services/service-img-3-lg@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- Набір зображень для планшетних екранів -->
+                <!-- <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/gallery/gallery-3_md.jpg    1x,
+                    ./images/gallery/gallery-3_md@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                /> -->
+                <!-- Набір зображень для мобільних екранів -->
+                <!-- <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/gallery/gallery-3_sm.jpg    1x,
+                    ./images/gallery/gallery-3_sm@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                /> -->
+                <!-- Дефолтне зображення, яке відпрацює у будь-якому випадку -->
+                <img
+                  class="about-photo"
+                  src="./images/Services/service-img-3-lg.jpg"
+                  alt="Service3"
+                  width="370"
+                  height="294"
+                  loading="lazy"
+                />
+              </picture>
               <p class="about-item__txt">Дизайнерские решения</p>
             </li>
           </ul>
@@ -260,13 +353,40 @@
           <h2 class="team">Наша команда</h2>
           <ul class="list team-list">
             <li class="team-item">
-              <img
-                class="member-photo"
-                src="./images/team/member-img-1.jpg"
-                alt="Photo Ihor"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team/member-img-1-lg.jpg    1x,
+                    ./images/team/member-img-1-lg@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/member-img-1-md.jpg    1x,
+                    ./images/team/member-img-1-md@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/team/member-img-1-sm.jpg    1x,
+                    ./images/team/member-img-1-sm@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  class="member-photo"
+                  src="./images/team/member-img-1-sm.jpg"
+                  alt="Photo Ihor"
+                  width="450"
+                  height="460"
+                  loading="lazy"
+                />
+              </picture>
               <div class="team-item-card">
                 <h3 class="team-item-card__member">Игорь Демьяненко</h3>
                 <p class="team-item-card__position" lang="en">Product Designer</p>
@@ -326,13 +446,40 @@
               </div>
             </li>
             <li class="team-item">
-              <img
-                class="member-photo"
-                src="./images/team/member-img-2.jpg"
-                alt="Photo Olga"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team/member-img-2-lg.jpg    1x,
+                    ./images/team/member-img-2-lg@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/member-img-2-md.jpg    1x,
+                    ./images/team/member-img-2-md@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/team/member-img-2-sm.jpg    1x,
+                    ./images/team/member-img-2-sm@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  class="member-photo"
+                  src="./images/team/member-img-2-sm.jpg"
+                  alt="Photo Olga"
+                  width="450"
+                  height="460"
+                  loading="lazy"
+                />
+              </picture>
               <div class="team-item-card">
                 <h3 class="team-item-card__member">Ольга Репина</h3>
                 <p class="team-item-card__position" lang="en">Frontend Developer</p>
@@ -392,13 +539,40 @@
               </div>
             </li>
             <li class="team-item">
-              <img
-                class="member-photo"
-                src="./images/team/member-img-3.jpg"
-                alt="Photo Nikolay"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team/member-img-3-lg.jpg    1x,
+                    ./images/team/member-img-3-lg@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/member-img-3-md.jpg    1x,
+                    ./images/team/member-img-3-md@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/team/member-img-3-sm.jpg    1x,
+                    ./images/team/member-img-3-sm@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  class="member-photo"
+                  src="./images/team/member-img-3-sm.jpg"
+                  alt="Photo Nikolay"
+                  width="450"
+                  height="460"
+                  loading="lazy"
+                />
+              </picture>
               <div class="team-item-card">
                 <h3 class="team-item-card__member">Николай Тарасов</h3>
                 <p class="team-item-card__position" lang="en">Marketing</p>
@@ -458,12 +632,40 @@
               </div>
             </li>
             <li class="team-item">
-              <img
-                class="member-photo"
-                src="./images/team/member-img-4.jpg"
-                alt="Photo Mikhail"
-                width="270"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team/member-img-4-lg.jpg    1x,
+                    ./images/team/member-img-4-lg@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/member-img-4-md.jpg    1x,
+                    ./images/team/member-img-4-md@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/team/member-img-4-sm.jpg    1x,
+                    ./images/team/member-img-4-sm@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  class="member-photo"
+                  src="./images/team/member-img-4-sm.jpg"
+                  alt="Photo Mikhail"
+                  width="450"
+                  height="460"
+                  loading="lazy"
+                />
+              </picture>
               <div class="team-item-card">
                 <h3 class="team-item-card__member">Михаил Ермаков</h3>
                 <p class="team-item-card__position" lang="en">UI Designer</p>
