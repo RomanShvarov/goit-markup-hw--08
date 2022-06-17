@@ -181,10 +181,9 @@
 }
 
 .portfolio-item__lable {
-  display: block;
+  //   display: block;
   //   display: flex;
   //   flex-direction: column;
-  flex-grow: 1;
 
   padding-top: 20px;
   padding-right: 24px;
@@ -193,6 +192,12 @@
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
+
+  flex-grow: 1;
+
+  //   @include mq(tablet-only) {
+  //     flex-grow: 1;
+  //   }
 }
 
 .portfolio-item__title {
