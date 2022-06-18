@@ -125,6 +125,10 @@
   transition-duration: 250ms;
   transition-timing-function: var(--timing-function);
 
+  @media screen and (max-width: 479px) {
+    width: 100%;
+  }
+
   @include mq(mobile) {
     width: 210px;
   }

@@ -2248,6 +2248,12 @@ img {
           transition-timing-function: var(--timing-function);
 }
 
+@media screen and (max-width: 479px) {
+  .clients__link {
+    width: 100%;
+  }
+}
+
 @media screen and (min-width: 480px) {
   .clients__link {
     width: 210px;
