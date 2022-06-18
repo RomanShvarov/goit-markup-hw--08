@@ -24,10 +24,6 @@
   transform: translate(-50%, -50%);
   width: 528px;
 
-  @include mq(not-desktop) {
-    width: 450px;
-  }
-
   padding: 40px;
 
   opacity: 1;
@@ -39,6 +35,19 @@
   background-color: var(--main-bcg-color);
 
   transition: transform 250ms var(--timing-function);
+
+  @media screen and (min-width: 320px) and (max-width: 479px) {
+    width: 95%;
+    padding: 40px 20px;
+  }
+
+  @include mq(mobile) {
+    width: 450px;
+  }
+
+  @include mq(tablet-only) {
+    width: 450px;
+  }
 }
 
 .modal-hero-btn {

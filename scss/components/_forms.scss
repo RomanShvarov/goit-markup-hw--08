@@ -74,8 +74,23 @@
     border-color: var(--accent-color);
   }
 
-  @include mq(not-desktop) {
+  @media screen and (min-width: 120px) and (max-width: 479px) {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  @include mq(mobile) {
     width: 450px;
+    margin-bottom: 20px;
+  }
+
+  @include mq(tablet-only) {
+    width: 450px;
+    margin-bottom: 20px;
+  }
+
+  @include mq(desktop) {
+    width: 358px;
     margin-bottom: 20px;
   }
 }

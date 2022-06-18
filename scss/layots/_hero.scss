@@ -64,12 +64,43 @@
   text-transform: uppercase;
   color: var(--white-txt-color);
 
-  @include mq(not-desktop) {
+  @media screen and (min-width: 120px) and (max-width: 479px) {
+    display: block;
+    width: 100%;
+    font-size: 26px;
+  }
+
+  @include mq(mobile) {
     width: 360px;
     height: 84px;
 
     font-size: 26px;
     line-height: 1.62;
     text-align: center;
+  }
+
+  @include mq(tablet-only) {
+    width: 360px;
+    height: 84px;
+
+    font-size: 26px;
+    line-height: 1.62;
+    text-align: center;
+  }
+
+  @include mq(desktop) {
+    width: 696px;
+    height: 120px;
+    margin-bottom: 30px;
+    margin-right: auto;
+    margin-left: auto;
+
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--white-txt-color);
   }
 }
