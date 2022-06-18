@@ -31,7 +31,7 @@
   align-items: center;
   justify-content: center;
 
-  @media screen and (min-width: 320px) and (max-width: 479px) {
+  @media screen and (max-width: 479px) {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -62,7 +62,7 @@
 }
 
 .clients__item {
-  @media screen and (min-width: 320px) and (max-width: 479px) {
+  @media screen and (max-width: 479px) {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
