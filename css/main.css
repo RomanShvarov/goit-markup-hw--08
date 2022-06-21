@@ -433,6 +433,12 @@ img {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .modal-wrapper {
+    width: 528px;
+  }
+}
+
 .modal-hero-btn {
   position: absolute;
   top: 8px;
@@ -911,6 +917,7 @@ img {
 
 @media screen and (max-width: 1199.98px) {
   .form-policy-dscr {
+    text-align: right;
     font-size: 12px;
     line-height: 1.17;
   }
@@ -2508,8 +2515,8 @@ img {
   transition: -webkit-transform 250ms var(--timing-function);
   transition: transform 250ms var(--timing-function);
   transition: transform 250ms var(--timing-function), -webkit-transform 250ms var(--timing-function);
-  -webkit-transform: translateY(100%);
-          transform: translateY(100%);
+  -webkit-transform: translateY(101%);
+          transform: translateY(101%);
 }
 
 @media screen and (min-width: 120px) and (max-width: 479px) {

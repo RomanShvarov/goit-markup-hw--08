@@ -234,6 +234,7 @@
   letter-spacing: 0.03em;
 
   @include mq(not-desktop) {
+    text-align: right;
     font-size: 12px;
     line-height: 1.17;
   }
